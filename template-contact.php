@@ -23,7 +23,7 @@ $email_address = get_field('email_address', 'option');
         <div class="mt-12 md:mt-24 lg:mt-32 grid gap-6 sm:grid-cols-2">
             <div class="col">
                 <?php if ($address) : ?>
-                    <div class="flex gap-x-6 lg:gap-x-12">
+                    <div class="flex gap-x-6 lg:gap-x-12 items-center">
                         <div class="icon">
                             <img class="h-auto w-8" src="<?php echo get_template_directory_uri(); ?>/assets/images/contact/location-icon.svg" alt="location icon">
                         </div>
@@ -33,7 +33,7 @@ $email_address = get_field('email_address', 'option');
                     </div>
                 <?php endif; ?>
                 <?php if($email_address) :  ?>
-                    <div class="flex gap-x-6 lg:gap-x-12 mt-12">
+                    <div class="flex gap-x-6 lg:gap-x-12 mt-12 items-center">
                         <div class="icon">
                             <img class="h-auto w-8" src="<?php echo get_template_directory_uri(); ?>/assets/images/contact/email-icon.svg" alt="email icon">
                         </div>

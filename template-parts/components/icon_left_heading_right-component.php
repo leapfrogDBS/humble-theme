@@ -10,7 +10,7 @@
         <img class="h-auto object-cover" src="<?php echo $icon_left['url']; ?>" alt="<?php echo $icon_left['alt']; ?>" style="width:<?php echo $icon_width_px;?>px;">
     <?php endif; ?>
     <div>
-        <?php if($heading_text) : ?>      
+        <?php if($heading_text) : ?> 
             <?php include(locate_template('template-parts/components/heading-component.php')); ?>
         <?php endif; ?>
         <?php if($text_editor_content) : ?>

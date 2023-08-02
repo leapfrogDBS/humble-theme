@@ -19,6 +19,7 @@ $link_to = get_sub_field('link_to');
 $page_link = get_sub_field('page_link');
 $anchor_link = get_sub_field('anchor_link');
 
+
 // Generate inline style attribute based on field values
 $inlineStyle = "";
 
@@ -83,7 +84,7 @@ switch ($link_to) {
 ?>
 
 <?php if ($button_text): ?>
-    <div class="btn-container w-full text-center <?php echo $button_alignment;?>">
+    <div class="btn-container w-full <?php echo $button_alignment;?>">
         <div class="inline-block">
             <?php if ($link_to === "popup" && $popup_link): ?>
                 <button id="<?php echo $button_id; ?>" class="popup-button standard-button group block z-40 relative mt-6" style="<?php echo $inlineStyle; ?>">

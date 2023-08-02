@@ -47,9 +47,9 @@ $popup_post_id = $popup_link->ID;
   <!-- Modal Wrapper -->
   <div class="modal-wrapper h-full flex items-center justify-center">
         <!-- Modal content -->
-        <div id="content-<?php echo $unique_popup_id; ?>" class="popup-content modal-content w-3/4 relative bg-white m-auto p-6 shadow-lg max-w-2xl bg-cover bg-no-repeat fade-in" style="<?php echo $bg_style; ?>">
+        <div id="content-<?php echo $unique_popup_id; ?>" class="popup-content modal-content w-full sm:w-3/4 relative bg-white m-auto p-6 shadow-lg max-w-2xl bg-cover bg-no-repeat fade-in" style="<?php echo $bg_style; ?>">
             <span id="close-<?php echo $unique_popup_id; ?>" class="close-button text-midnight-blue leading-none rounded-full px-3 py-2 bg-white text-xl font-extrabold cursor-pointer absolute top-6 right-6">X</span>
-            <div class="content text-white flex flex-col justify-center items-center py-20 px-8 gap-y-6">
+            <div class="content text-white flex flex-col justify-center items-center px-0 sm:px-8 py-16 lg:py-20 gap-y-6">
                 <?php if (have_rows('components', $popup_post_id)) :
                 while (have_rows('components', $popup_post_id)): the_row();
 

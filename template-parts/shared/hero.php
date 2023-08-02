@@ -11,16 +11,16 @@ if ($text_color) {
 } else {
     $row_style = 'color: #fff;';
 }
-$row_classes .= 'row mx-auto mt-16 mb-0 md:my-20 relative z-40 py-12 lg:pt-40 lg:pb-0';
+$row_classes .= 'row mx-auto mt-16 mb-0 md:my-16 relative z-40 py-12 lg:pb-0';
 
 echo '<div class="' . $row_classes . '" style="' . $row_style . '">';
 ?>
     
-            <div class="col text-center md:text-left">
+            <div class="col text-left">
                 <h1 class="headingOne font-bold"><?php echo $hero_title; ?></h1>
                 <h2 class="headingFour w-full lg:w-2/3 mt-6"><?php echo $hero_subtitle; ?></h2>
             </div>      
-            <div class="col mt-8 text-center md:text-left">
+            <div class="col mt-8 text-left">
                 <div class="inline-block">
                     <?php include(locate_template('template-parts/components/button-component.php')); ?>
                 </div>

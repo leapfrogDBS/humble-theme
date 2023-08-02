@@ -267,9 +267,9 @@
                 "id": ""
             },
             "choices": {
-                "md:text-left": "Left",
-                "md:text-center": "Center",
-                "md:text-right": "Right"
+                "text-left": "Left",
+                "text-center": "Center",
+                "text-right": "Right"
             },
             "default_value": "text-left",
             "return_format": "value",
@@ -308,5 +308,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1690532750
+    "modified": 1690980153
 }

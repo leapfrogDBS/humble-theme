@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer bg-midnight-blue text-white py-12 relative">
-		<div class="px-16 lg:px-20 max-w-5xl mx-auto">
+		<div class="px-8 md:px-16 lg:px-20 max-w-5xl mx-auto">
 			<div class="row flex flex-col items-center gap-y-8 justify-between lg:flex-row lg:items-end">
 				<div class="col">
 					<?php 
@@ -25,7 +25,7 @@
 						}
 					?>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img class="h-20" src="<?php echo esc_url($footer_image_src); ?>" alt="humble associates colour logo">
+						<img class="h-12 lg:h-20" src="<?php echo esc_url($footer_image_src); ?>" alt="humble associates colour logo">
 					</a>
 				</div>
 				
@@ -45,18 +45,18 @@
 					?>
 					<div class="social-logos flex gap-x-2 justify-center lg:justify-end">
 						<? if($linkedin) : ?>
-							<a href="<?php echo esc_url($linkedin['url']); ?>" target="_blank"><img class="h-12 lg:h-6" src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.png" alt="linkedin icon"></a>
+							<a href="<?php echo esc_url($linkedin['url']); ?>" target="_blank"><img class="h-8 lg:h-6" src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.png" alt="linkedin icon"></a>
 						<? endif; ?>
 						<? if($twitter) : ?>
-							<a href="<?php echo esc_url($twitter['url']); ?>" target="_blank"><img class="h-12 lg:h-6" src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.png" alt="twitter icon"></a>	
+							<a href="<?php echo esc_url($twitter['url']); ?>" target="_blank"><img class="h-8 lg:h-6" src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.png" alt="twitter icon"></a>	
 						<? endif; ?>
 					</div>
-					<p class="font-bold mt-4 lg:mt-0">© 2022 Humble Associates Coaching Ltd.</p>
+					<p class="text-[11px] md:text-sm font-bold mt-4 lg:mt-0">© 2022 Humble Associates Coaching Ltd.</p>
 					<?php 
 						$address = get_field('address', 'option');
 						if ($address) :	
 					?>
-						<p><?php echo $address; ?></p>
+						<p class="text-[11px] md:text-sm"><?php echo $address; ?></p>
 					<?php endif; ?>
 
 				</div>
@@ -66,6 +66,10 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<div id="to-top-button" class="fixed bottom-8 md:bottom-8 right-8 z-40 cursor-pointer md:hidden">
+	<i class="fa-solid fa-circle-chevron-up text-5xl text-white bg-midnight-blue rounded-full shadow-2xl"></i>
+</div>
 
 </body>
 </html>

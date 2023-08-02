@@ -56,7 +56,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'humble-associates' ); ?></a>
 
 	<!-- Mobile Menu Button -->
-	<div class="fixed top-12 right-12 xl:hidden focus:outline-none z-[600]" id="mobile-menu-button">
+	<div class="fixed top-9 right-12 xl:hidden focus:outline-none z-[600]" id="mobile-menu-button">
 		<div class="hamburger flex flex-col justify-between h-5">
 			<div class="bar w-10 h-0.5 bg-white transition-transform duration-500 ease-in-out"></div>
 			<div class="bar w-10 h-0.5 bg-white transition-opacity duration-500 ease-in-out"></div>
@@ -77,7 +77,7 @@
 							$header_image_src = get_template_directory_uri() . '/assets/images/white-logo.svg';
 						}
 					?>
-					<img class="h-12" src="<?php echo esc_url($header_image_src); ?>" alt="humble associates logo">
+					<img class="h-8 md:h-12" src="<?php echo esc_url($header_image_src); ?>" alt="humble associates logo">
 				</a>
 				
 				<!-- Desktop Menu -->

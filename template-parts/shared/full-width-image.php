@@ -79,7 +79,7 @@ if ($css_id) {
 <section style="<?php echo $bg_style; ?>">
     <div class="w-full p-0 max-w-none">
         <div <?php echo $css_id; ?> class="row <?php echo $row_classes; ?>" style="<?php echo $row_style; ?>">
-            <div class="col px-16 py-4 sm:py-16 lg:py-28 flex flex-col 2xl:px-32 <?php echo $col1_class; ?> <?php echo $position_content; ?>">
+            <div class="col px-8 sm:px-16 py-8 sm:py-16 lg:py-28 flex flex-col 2xl:px-32 <?php echo $col1_class; ?> <?php echo $position_content; ?>">
             <?php
             if (have_rows('components')):
                 while (have_rows('components')): the_row();
