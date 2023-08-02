@@ -1,0 +1,66 @@
+{
+    "key": "group_64a56304e4b0f",
+    "title": "Background Colour Selection",
+    "fields": [
+        {
+            "key": "field_64a563051470a",
+            "label": "Background Colour Selection",
+            "name": "colour_selection",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "#ffffff": "White",
+                "#FF2E5C": "Pink",
+                "#7D52FF": "Purple",
+                "#0DD4C9": "Teal",
+                "#176BFF": "Light Blue",
+                "#05053D": "Navy"
+            },
+            "default_value": "transparent",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "page"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "popup"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1690297040
+}

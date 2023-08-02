@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 700 700" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-labelledby="comp-ld7p2mgm-svgtitle_comp-ld7p2mgm"><title id="comp-ld7p2mgm-svgtitle_comp-ld7p2mgm"></title>
+    <g>
+        <defs>
+            <clipPath id="e8711c76-5ff7-4781-abb2-1e3b3b985f29_comp-ld7p2mgm">
+                <path d="M700 0v700H0V0h700z"></path>
+            </clipPath>
+            <clipPath id="4559c4bc-7d39-4b88-946e-b3286b1470a5_comp-ld7p2mgm">
+                <path d="M700 0v700H0V0h700z"></path>
+            </clipPath>
+        </defs>
+        <g clip-path="url(#e8711c76-5ff7-4781-abb2-1e3b3b985f29_comp-ld7p2mgm)">
+            <g clip-path="url(#4559c4bc-7d39-4b88-946e-b3286b1470a5_comp-ld7p2mgm)">
+                <path d="M700 350c0 193.3-156.7 350-350 350S0 543.3 0 350 156.7 0 350 0s350 156.7 350 350" fill="#05053D" data-color="1"></path>
+            </g>
+        </g>
+    </g>
+</svg>
