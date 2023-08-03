@@ -3,6 +3,11 @@ $column_one_title = get_sub_field('column_one_title');
 $column_two_image = get_sub_field('column_two_image');
 $row_classes = 'row grid grid-cols-1 ';
 
+$vertical_position = get_sub_field('image_col_vertical_position');
+$horzontal_position = get_sub_field('image_col_horzontal_position');
+
+$style_position = 'object-position: ' . $horzontal_position . ' ' . $vertical_position . ';';
+
 $layout = get_sub_field('column_layout') ?: '';
     if ($layout == 'first' || $layout == 'third') {
         $row_classes .= 'lg:grid-cols-3';
@@ -77,9 +82,9 @@ if ($css_id) {
 ?>
     
 <section style="<?php echo $bg_style; ?>">
-    <div class="w-full p-0 max-w-none">
+    <div class="w-full p-0 mx-auto">
         <div <?php echo $css_id; ?> class="row <?php echo $row_classes; ?>" style="<?php echo $row_style; ?>">
-            <div class="col px-8 sm:px-16 py-8 sm:py-16 lg:py-28 flex flex-col 2xl:px-32 <?php echo $col1_class; ?> <?php echo $position_content; ?>">
+            <div class="col px-8 sm:px-16 py-8 sm:py-16 flex flex-col 2xl:px-32 <?php echo $col1_class; ?> <?php echo $position_content; ?>">
             <?php
             if (have_rows('components')):
                 while (have_rows('components')): the_row();
@@ -97,8 +102,8 @@ if ($css_id) {
             endif;
             ?>
             </div>
-            <div class="image-col col bg-no-repeat bg-cover h-[350px] xs:h-[440px] lg:h-auto <?php echo $col2_class; ?>" style="background-image: url(<?php echo $column_two_image['url']; ?>);">
-            
+            <div class="bg-image-col image-col col bg-no-repeat bg-cover h-auto <?php echo $col2_class; ?>">
+                <img class ="h-full w-full object-cover max-h-[680px] lg:max-h-[800px]" style="<?php echo $style_position; ?>" src="<?php echo $column_two_image['url']; ?>" alt="<?php echo $column_two_image['alt']; ?>">
             </div>
         </div>
     </div>

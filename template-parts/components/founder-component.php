@@ -12,7 +12,7 @@ $founder_title = get_sub_field('founder_title');
         </div>
         <div class="bio flex gap-x-6 items-center">
             <?php if ($linkedin_profile) : ?>
-                <a href="<?php echo esc_url($linkedin_profile['url']); ?>" target="_blank" rel="noopener noreferrer">
+                <a href="<?php echo esc_url($linkedin_profile['url']); ?>" target="_blank" rel="noopener noreferrer" class="shrink-0">
                     <img class="h-11 w-11" src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.png" alt="linkedin icon">
                 </a>
             <?php endif; ?>

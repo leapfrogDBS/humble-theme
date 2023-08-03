@@ -4,7 +4,7 @@ $trek_step_image = get_sub_field('trek_step_image');
 $trek_step_heading = get_sub_field('trek_step_heading');
 $trek_step_text = get_sub_field('trek_step_text');
 ?>
-<div class="flex flex-col items-center md:flex-row gap-12 md:w-10/12 my-12">
+<div class="flex flex-col items-center md:flex-row gap-6 md:gap-12 md:w-10/12 mt-6 mb-0 md:my-12">
     <?php if ($trek_step_image) : ?>
         <img src="<?php echo esc_url($trek_step_image['url']); ?>" alt="<?php echo esc_attr($trek_step_image['alt']); ?>" class="w-36 h-36">
     <?php endif; ?>

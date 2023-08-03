@@ -375,3 +375,7 @@ function create_popup_post_type() {
 }
 add_action( 'init', 'create_popup_post_type' );
 
+function my_custom_headers() {
+    header('Cache-Control: no-cache, must-revalidate, max-age=0');
+}
+add_action('send_headers', 'my_custom_headers');
